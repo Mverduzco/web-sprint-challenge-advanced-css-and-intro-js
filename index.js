@@ -208,9 +208,11 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
+console.log(artists[0])
 
 
 //(2) Bio of the third artist (2nd index) in the array 
+console.log(artists[2].bio)
 
 
 
@@ -228,9 +230,11 @@ Use getArtistByIndex to do the following:
 
 Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
+function getArtistByIndex(arr, number) {
+  return `the artist at index ${arr[number].id} is ${arr[number].name}`
   /*Your Code Here*/
 }
+console.log(getArtistByIndex(artists, 5));
 
 
 
